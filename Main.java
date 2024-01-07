@@ -20,6 +20,8 @@ public class Main {
                 } catch (ArrayIndexOutOfBoundsException e) {
                     // Hata durumunda mesajı yazdırma
                     System.out.println("Hata mesajı: Belirtilen index dizinin boyutunun dışında!");
+                }finally {
+                    input.close();
                 }
             }
 
